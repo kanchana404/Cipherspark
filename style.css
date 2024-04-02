@@ -24,3 +24,43 @@ body{
     font-weight: bold;
     border-radius: 50px;
 }
+
+.nav-bar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    }
+    
+    .logo h1{
+    font-size: 20px;
+    color: white;
+    margin: 35px 0;
+    }
+    
+    nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    }
+    
+    nav ul a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: white;
+    font-size: 12px;
+    padding: 5px 2px;
+    }
+    
+    
+    nav ul a:hover{
+    color: #1c7ed6;
+    border-bottom: 3px solid #1c7ed6;
+    }
+    
+    nav ul a:hover{
+    color: #1c7ed6;
+    border-bottom: 3px solid #1c7ed6;
+    }
+    
