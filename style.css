@@ -74,3 +74,33 @@ body{
       .navbar-nav .nav-link:hover {
         color: #1c7ed6 !important; /* Change color on hover */
       }
+
+      .navbar-nav .nav-link {
+        color: white !important;
+        font-size: 18px; /* Adjust font size */
+      }
+  
+      .navbar-nav .nav-link:hover {
+        color: #1c7ed6 !important;
+      }
+  
+      @media (min-width: 992px) {
+        .navbar-nav .nav-link {
+          padding: 0 15px; /* Adjust padding */
+          white-space: nowrap; /* Prevent line breaks */
+        }
+      }
+  
+      /* Style for hero section */
+      #hero {
+        background-image: url('./Rectangle 2 (1).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white; /* Text color for the hero section */
+        font-size: 55px; /* Font size for the hero section */
+      }
