@@ -29,6 +29,20 @@
         padding: 0 15px; /* Adjust padding */
       }
     }
+
+    /* Style for hero section */
+    #hero {
+      background-image: url('./Rectangle 2 (1).png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white; /* Text color for the hero section */
+      font-size: 55px; /* Font size for the hero section */
+    }
   </style>
 </head>
 
@@ -78,26 +92,32 @@
     </div>
   </nav>
 
-  <section id="hero" style=" height: 85vh;
-  display: flex;
-  justify-Content: center;
-  align-Items: center;">
+  <section id="hero">
     <div class="col">
       <div class="row">
-        <div class="col-lg-3  col-md-3"></div>
+        <div class="col-lg-3 col-md-3"></div>
         <div class="col-lg-6 col-md-12 col-sm-12 text-center mt-5">
-          <h1 style="color: white; font-size: 55px;" ><b>Welcome to <br> CypherSpark It solution</b></h1>
+          <h1><b>Welcome to <br> CypherSpark It solution</b></h1>
           <br>
           <br>
-          <button class="btn" id="b1">More Info</button>
+          <a href="#design" class="btn" id="b1">More Info</a>
         </div>
-        <div class="col-lg-3  col-md-3"></div>
+        <div class="col-lg-3 col-md-3"></div>
       </div>
-     </div>
+    </div>
   </section>
 
+  <section id="design" style="height: 1000px;">
+    <br>
+    <h1>Hi</h1>
+  </section>
 
-  
+  <!-- JavaScript to navigate to the design section -->
+  <script>
+    document.getElementById("b1").addEventListener("click", function () {
+      document.getElementById("design").scrollIntoView();
+    });
+  </script>
 </body>
 
 </html>
