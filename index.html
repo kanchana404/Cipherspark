@@ -16,7 +16,17 @@
     rel="stylesheet">
 
   <style>
-
+    /* CSS to reduce space between sections on larger screens */
+    @media (min-width: 992px) {
+      /* Adjust margin-bottom for sections */
+      #design,
+      #Project,
+      #roadmap,
+      #directors,
+      #reviews {
+        margin-bottom: 100px; /* Adjust this value as needed */
+      }
+    }
   </style>
 </head>
 
@@ -82,8 +92,8 @@
     </div>
   </section>
   <br>
-<br>
-  <section id="design" style="height: 1000px; margin-bottom: 80px;">
+  <br>
+  <section id="design" style="height: 1000px; margin-bottom: 250px;">
     <br>
     <br>
     <div class="col">
@@ -112,7 +122,7 @@
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12 text-center"
           style="color: white; border: 1px solid #868e96; border-radius: 50px;padding: 25px; ">
-          <img src="./design.jpg" style="width: 400px; border: 1px ; border-radius: 50px;">
+         <img src="./design/design.jpg" width="100%">
         </div>
       </div>
     </div>
@@ -225,80 +235,12 @@
         </div>
       </div>
 
-
-      <div class="row" style="margin-bottom: 50px;">
-        <div class="col-lg-2 col-md-12 col-sm-12 text-center" style="margin-bottom: 15px;">
-          <img src="./admin/nadan.png" alt="" style="width: 250px; border: 1px ; border-radius: 50px;">
-        </div>
-        <div class="col-lg-1 col-md-12 col-sm-12"></div>
-        <div class="col-lg-9 col-md-12 col-sm-12"
-          style="border: 1px ; background: #495057; border-radius: 50px; padding: 10px; padding:25px;">
-          <h1 style="font-size: 40px;"><b>Nadan</b></h1>
-          <h4 style="color: #1c7ed6;">Marketing Manager</h4>
-
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, atque. Eum sapiente temporibus
-            reiciendis omnis, inventore maiores eaque hic debitis nostrum distinctio cupiditate quo, eligendi enim
-            necessitatibus voluptate optio rerum!</p>
-        </div>
-      </div>
-
-
-      <div class="row" style="margin-bottom: 50px;">
-        <div class="col-lg-2 col-md-12 col-sm-12 text-center" style="margin-bottom: 15px;">
-          <img src="./admin/kaputa.png" alt="" style="width: 250px; border: 1px ; border-radius: 50px;">
-        </div>
-        <div class="col-lg-1 col-md-12 col-sm-12"></div>
-        <div class="col-lg-9 col-md-12 col-sm-12"
-          style="border: 1px ; background: #495057; border-radius: 50px; padding: 10px; padding:25px;">
-          <h1 style="font-size: 40px;"><b>Kaputa</b></h1>
-          <h4 style="color: #1c7ed6;">Developer</h4>
-
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, atque. Eum sapiente temporibus
-            reiciendis omnis, inventore maiores eaque hic debitis nostrum distinctio cupiditate quo, eligendi enim
-            necessitatibus voluptate optio rerum!</p>
-        </div>
-      </div>
-
-
-
     </div>
   </section>
+  <br>
+  <br>
+  <br>
 
-  <section>
-    <div class="row justify-content-center"
-      style="color: white; border: 1px solid #868e96; border-radius: 50px;padding: 25px; margin-bottom: 20px;">
-      <h6 style="margin-bottom: 0px; color: #adb5bd;">CypherSpark</h6>
-      <h2 style="color: white;">Reviews</h2>
-      <br>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="container" style="background: #495057; padding: 10px; border-radius: 50px; padding: 20px;">
-              <div class="container text-center" style="background: black; border-radius: 50px; padding: 8px;">
-                <h3>Lutu Putu Gaya</h3>
-              </div>
-              <br>
-              <div class="col text-center" style="border-radius: 50px;">
-                <img src="./design/OIP.jpeg" style="width: 150px;" alt="" class="rounded-circle">
-              </div>
-              <br>
-              <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, architecto
-                incidunt, magni corrupti inventore aliquam libero repellat non maiores quia error distinctio optio.
-                Quibusdam, fuga quis in placeat mollitia omnis.</p>
-              <div class="col text-center">
-                <!-- Star Icons -->
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <div class="col text-center">
-
-              </div>
-            </div>
-            <br>
-          </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="container" style="background: #495057; padding: 10px; border-radius: 50px; padding: 20px;">
               <div class="container text-center" style="background: black; border-radius: 50px; padding: 8px;">
@@ -376,17 +318,9 @@
 
     </div>
   </section>
-
   <footer class="text-center" style="color: white;">
     <h6>© All rights reserved to CypherSpark™ 2024</h6>
   </footer>
-
-  <!-- JavaScript to navigate to the design section -->
-  <script>
-    document.getElementById("b1").addEventListener("click", function () {
-      document.getElementById("design").scrollIntoView();
-    });
-  </script>
 </body>
 
 </html>
